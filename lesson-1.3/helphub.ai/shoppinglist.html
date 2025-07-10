@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping List</title>
+    <style>
+        body {
+            background: #f4f6fb;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 40px 28px 40px;
+            min-width: 340px;
+            max-width: 90vw;
+        }
+        .title {
+            font-size: 2.1em;
+            font-weight: 700;
+            color: #2d6a4f;
+            margin-bottom: 8px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .divider {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 12px 0 24px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 1.13em;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            margin-right: 18px;
+            accent-color: #40916c;
+        }
+        .item {
+            flex: 1;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">Shopping List</div>
+        <hr class="divider" />
+        <ul>
+            <li><input type="checkbox" class="checkbox"><span class="item">Milk</span></li>
+            <li><input type="checkbox" class="checkbox"><span class="item">Eggs</span></li>
+            <li><input type="checkbox" class="checkbox"><span class="item">Bread</span></li>
+            <li><input type="checkbox" class="checkbox"><span class="item">Apples</span></li>
+            <li><input type="checkbox" class="checkbox"><span class="item">Chicken</span></li>
+        </ul>
+    </div>
+</body>
+</html>
